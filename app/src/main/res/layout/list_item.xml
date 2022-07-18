@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:columnCount="2"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="添加一条记录"/>
+
+            <Button
+                android:id="@+id/add_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加一条记录到指定行" />
+
+            <Button
+                android:id="@+id/remove_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除一条记录" />
+
+            <Button
+                android:id="@+id/remove_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除指定行" />
+
+
+        </GridLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
